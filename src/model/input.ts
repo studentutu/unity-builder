@@ -85,6 +85,14 @@ class Input {
     return core.getInput('customParameters') || '';
   }
 
+  static get sshAgent() {
+    return core.getInput('sshAgent') || '';
+  }
+
+  static get chownFilesTo() {
+    return core.getInput('chownFilesTo') || '';
+  }
+
   static get remoteBuildCluster() {
     return core.getInput('remoteBuildCluster') || '';
   }

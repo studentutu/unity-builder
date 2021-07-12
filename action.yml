@@ -106,6 +106,14 @@ inputs:
 
       Parameters must start with a hyphen (-) and may be followed by a value (without hyphen).
       Parameters without a value will be considered booleans (with a value of true).
+  sshAgent:
+    required: false
+    default: ''
+    description: 'SSH Agent path to forward to the container'
+  chownFilesTo:
+    required: false
+    default: ''
+    description: 'User and optionally group (user or user:group or uid:gid) to give ownership of the resulting build artifacts'
   allowDirtyBuild:
     required: false
     default: ''
